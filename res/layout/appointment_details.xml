@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OuterLayout" >
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:entries="@array/repeatingTypes" >
+        <!-- Preview: listitem=@android:layout/simple_spinner_item -->
+    </Spinner>
+    
+    <LinearLayout
+        android:id="@+id/appointmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerType"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical">
+        
+        <TextView
+        android:id="@+id/textInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/every"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+        android:id="@+id/repeatingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        	<EditText
+            android:id="@+id/editInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dip"
+            android:inputType="number"/>
+
+        	<Spinner
+        	    android:id="@+id/spinnerNumber"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content" />
+         </LinearLayout>
+        
+        
+    </LinearLayout>
+
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/appointmentLayout"
+        android:orientation="vertical"
+        android:id="@+id/timeLayout"
+        >
+        
+        <TextView
+       		 android:id="@+id/textTime"
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:text="@string/time"
+       		 android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        
+        <Spinner
+        	android:id="@+id/spinnerTime"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"/>
+
+   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/timeLayout"
+        android:orientation="vertical"
+        android:id="@+id/startDateLayout"
+        >
+        
+        <TextView
+       		 android:id="@+id/textStartDate"
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:text="@string/start_date"
+       		 android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <Spinner
+        	android:id="@+id/spinnerStartDate"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"/>
+
+       
+   
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_below="@+id/startDateLayout"
+        android:orientation="vertical"
+        android:id="@+id/endDateLayout"
+        >
+        
+        <TextView
+       		 android:id="@+id/textEndDate"
+        	 android:layout_width="wrap_content"
+        	 android:layout_height="wrap_content"
+        	 android:text="@string/end_date"
+       		 android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <Spinner
+            android:id="@+id/spinnerEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/repeatingTimes" />
+   
+    </LinearLayout>
+
+
+
+</RelativeLayout>

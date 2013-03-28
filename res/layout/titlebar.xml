@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/title_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/layout"
+        android:cropToPadding="true"
+        android:padding="8dip"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/rapla_small" />
+
+    <View
+        android:id="@+id/title_seperator_left"
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/title_logo"
+        android:background="@color/CustomTitleBarSeperatorBackground" >
+    </View>
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/CustomTitleBarTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/title_seperator_left"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="@string/titlebar_title_default" />
+
+</RelativeLayout>

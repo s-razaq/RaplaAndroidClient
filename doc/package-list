@@ -1,0 +1,9 @@
+org.rapla.mobile.android
+org.rapla.mobile.android.activity
+org.rapla.mobile.android.app
+org.rapla.mobile.android.browser.integration
+org.rapla.mobile.android.os
+org.rapla.mobile.android.utility
+org.rapla.mobile.android.utility.factory
+org.rapla.mobile.android.widget
+org.rapla.mobile.android.widget.adapter

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.rapla.mobile.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".RaplaMobileApplication"
+        android:debuggable="true"
+        android:icon="@drawable/tafel"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+
+        <!-- Register Activities -->
+
+        <activity
+            android:name=".activity.DummyHomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- The adjustPan value is necessary, otherwise you'll get into trouble with focusing edit text in the list view -->
+        <activity
+            android:name=".activity.EventDetailsActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".activity.AllocatableListActivity" >
+        </activity>
+        <activity android:name=".activity.AppointmentListActivity" >
+        </activity>
+        <activity android:name=".activity.AllocatableDetailsActivity" >
+        </activity>
+        <activity android:name=".activity.LoginActivity" >
+        </activity>
+        <activity android:name=".activity.BrowserGatewayActivity" >
+            <intent-filter>
+                <data android:scheme="raplaclient" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AppointmentDetailsActivity" >
+        </activity>
+        <activity android:name=".activity.UserCalendarListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- / Register Activities -->
+
+
+        <!-- Register Broadcast Receivers -->
+        <!-- / Register Broadcast Receivers -->
+    </application>
+
+</manifest>

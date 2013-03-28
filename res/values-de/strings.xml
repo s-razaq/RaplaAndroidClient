@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rapla</string>
+    <string name="username">Benutzername</string>
+    <string name="password">Passwort</string>
+    <string name="server">Server-URL</string>
+    <string name="login">Anmelden</string>
+    <string name="eventname"></string>
+    <string name="eventtype">Veranstaltungstyp</string>
+    <string name="guest">Gäste erlaubt</string>
+    <string name="allocations">Belegungen</string>
+    <string name="appointments">Termine</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="empty_list">Keine Einträge</string>
+    <string name="appointment_not_repeating">nicht wiederholend</string>
+    <string name="options">Optionen</string>
+    <string name="option_delete">Löschen</string>
+    <string name="appointment_confirm_delete">Sind Sie sicher, dass Sie diesen Termin löschen möchten?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="ok">Ok</string>
+    <string name="appointment_new">Neuer Termin</string>
+    <string name="options_undo_booking">Ausbuchen</string>
+    <string name="allocatable_confirm_undo_booking">Sind Sie sicher, dass Sie diese Ressource ausbuchen möchten?</string>
+    <string name="allocatable_assign_appointments_dialog_title">Termine zuweisen</string>
+    <string name="allocatable_assigned_to_all_appointments">alle Termine</string>
+    <string name="allocatable_assigned_to_x_of_y_appointmen">%1$s von %2$s Terminen zugewiesen</string>
+    <string name="search">Suche</string>
+    <string name="addEvent">Neue Veranstaltung</string>
+    <string name="settings">Einstellungen</string>
+    <string name="time">Uhrzeit</string>
+    <string name="every">Jede(n)</string>
+    <string name="start_date">Anfangsdatum</string>
+    <string name="end_date">Enddatum</string>
+    <string name="detele">Löschen</string>
+    <string name="apply">Übernehmen</string>
+    <string name="progress_dialog_loading_data">Daten werden geladen &#8230;</string>
+    <string name="cancel_discard_changes">Sind Sie sicher, dass Sie die Änderungen verwerfen möchten?</string>
+    <string name="cancel_login_wait">Möchten Sie den Login-Vorgang abbrechen?</string>
+    <string name="saveSuccessfully">Veranstaltung wurde erfolgreich gespeichert.</string>
+    <string name="allocatable_category_x_of_y_allocatables_selected">%1$s von %2$s ausgewählt</string>
+    
+    <string name="loginDataError">Fehler: Überprüfen Sie die Logindaten!</string>
+    <string name="loginDataSaveError">Fehler: Konnte die Logindaten nicht abspeichern</string>
+    <string name="remove_reservation_succeed">%1$s wurde erfolgreich gelöscht</string>
+    <string name="remove_reservation_fail">könnte nicht gelöscht werden</string>
+    <string name="exception">Unerwarteter Fehler</string>
+    <string name="exception_rapla_context_lookup">Es ist ein Fehler bei der Kommunikation mit dem Rapla-Server aufgetreten. Falls der Fehler bestehen bleibt kontaktieren Sie bitte Ihren Administrator.</string>
+    <string name="exception_rapla_data_retrieval">Es ist zu einem unerwarteten Fehler bei der Abfrage von Daten vom Rapla-Server gekommen. Bitte überprüfen Sie die Internetverbindung. Falls der Fehler bestehen bleibt kontaktieren Sie bitte Ihren Administrator.</string>
+    <string name="appointment_successfully_deleted">Termin erfolgreich gelöscht!</string>
+    <string name="exception_internal_error">Unerwarteter interner Fehler</string>
+    <string name="exception_number_format">Portnummer muss eine Zahl sein</string>
+    <string name="exception_browser_integration_no_handler_found">Die ausgewählte URL konnte nicht vor der Applikation behandelt werden. Falls der Fehler bestehen bleibt kontaktieren Sie bitte Ihren Administrator.</string>
+    <string name="exception_browser_integration_handling_error">Bei der Verarbeitung Ihrer Anfrage kam es zu einem Fehler. Falls der Fehler bestehen bleibt, kontaktieren Sie bitte Ihren Administrator.</string>
+    <string name="exception_no_internet_connection">Es ist keine aktive Internetverbindung vorhanden</string>
+    <string name="exception_creation_event_failed">Es konnte keine neue Veranstaltung angelegt werden</string>
+    <string name="x_subcategories">%1$s Unterkategorien</string>
+    <string name="no_subcategories">Keine Unterkategorien</string>
+    <string name="no_selection">Keine Auswahl</string>
+    <string name="root_category">Wurzelkategorie</string>
+    <string name="deleteEvent">Event löschen</string>
+    <string name="forever_repeating">Kein Enddatum definiert</string>
+    <string name="confirm_delete_reservation">Sind Sie sicher, dass Sie die Veranstaltung löschen möchten?</string>
+    
+    <string name="titlebar_title_default">RAPLA</string>
+    <string name="titlebar_title">RAPLA - %1$s</string>
+    <string name="titlebar_title_user_calendars">Meine Kalender</string>
+    <string name="titlebar_title_event_details">Veranstaltung</string>
+    <string name="titlebar_title_login">Login</string>
+    <string name="titlebar_title_allocatable_list">Ressourcen</string>
+    <string name="titlebar_title_appointment_list">Termine</string>
+    <string name="titlebar_title_appointment">Termin</string>
+    <string name="no_permission_to_allocate_all">Du bist nicht berechtigt die Ressource zu belegen</string>
+    <string name="no_persmission_to_allocate_for_x_of_y_appointments">Du bist nicht berechtigt die Ressource an %1$s von %2$s Terminen zu belegen</string>
+    
+</resources>

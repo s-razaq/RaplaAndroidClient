@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  Used in Spinner/spinner_2.java -->
+<string-array name="eventTypes">
+</string-array>
+<string-array name="repeatingTypes">
+ <item>No repeating</item>
+ <item>Weekly</item>
+ <item>Daily</item>
+ <item>Monthly</item>
+ <item>Yearly</item>
+</string-array>
+<string-array name="days">
+ <item>Sunday</item>
+ <item>Monday</item>
+ <item>Tuesday</item>
+ <item>Wednesday</item>
+ <item>Thursday</item>
+ <item>Friday</item>
+ <item>Saturday</item>
+</string-array>
+<string-array name="months">
+ <item>January</item>
+ <item>February</item>
+ <item>March</item>
+ <item>April</item>
+ <item>May</item>
+ <item>June</item>
+ <item>July</item>
+ <item>August</item>
+ <item>September</item>
+ <item>October</item>
+ <item>November</item>
+ <item>December</item>
+</string-array>
+<string-array name="repeatingTimes">
+ <item>1 time</item>
+ <item>2 times</item>
+ <item>x times</item>
+</string-array>
+</resources>

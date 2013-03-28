@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="../bin/classes;../lib/avalon-framework-4.2.0.jar;../lib/rapla.jar" destdir="" doctitle="Rapla Mobile Client" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="org.rapla.mobile.android.widget.adapter,org.rapla.mobile.android.utility,org.rapla.mobile.android.test,org.rapla.mobile.android.test.mock,org.rapla.mobile.android.test.utility,org.rapla.mobile.android.activity" source="1.7" sourcefiles="../src/org/rapla/mobile/android/RaplaMobileApplication.java,../gen/org/rapla/mobile/android/R.java,../src/org/rapla/mobile/android/PreferencesHandler.java,../src/org/rapla/mobile/android/RuntimeStorage.java,../src/org/rapla/mobile/android/RaplaMobileException.java,../src/org/rapla/mobile/android/RaplaMobileLoginException.java" sourcepath="../tests/gen;../tests/src;../gen;../src" splitindex="true" use="true" version="true">
+            <link href="http://developer.android.com/reference/"/>
+        </javadoc>
+    </target>
+</project>

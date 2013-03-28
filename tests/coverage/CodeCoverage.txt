@@ -1,0 +1,28 @@
+How to generate a code coverage report
+======================================
+
+0.
+Check out current source into a new project folder for not messing up the working project.
+
+1.
+Create a build.xml for your project (if it does not yet exist)
+>> cd <main project folder> 
+>> android update project --path . --name RaplaAndroidClient
+
+2.
+Create the build.xml for the test project (that will allow us to do the coverage)
+>> cd tests
+>> android update test-project -m .. -p .
+
+3.
+Remove redundant libs from project (e.g. duplicate rapla.jar for different server versions)
+
+4.
+Run 'ant emma debug install' in project directory
+
+5. 
+Remove all lib references and lib or libs folder from test project, the test project may only import the actual project whereas all libraries of the actual project need to be flagged as exportable
+
+
+7.
+Run 'ant emma debug install test' in test project directory

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/OuterLayout" >
+
+    <LinearLayout
+        android:id="@+id/button_bar"
+        style="@style/ButtonBar"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/button_bar" >
+
+        <TextView
+            android:id="@+id/event_type_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eventtype" />
+
+        <Spinner
+            android:id="@+id/eventtype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/event_type_label"
+            android:layout_marginBottom="10dip"
+            android:hint="@string/eventtype" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/eventtype"
+            android:cacheColorHint="#00000000"
+            android:minHeight="?android:attr/listPreferredItemHeight" />
+    </RelativeLayout>
+
+</RelativeLayout>
