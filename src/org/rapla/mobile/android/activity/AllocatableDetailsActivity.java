@@ -235,9 +235,7 @@ public class AllocatableDetailsActivity extends BaseActivity {
 		CharSequence[] items = new CharSequence[appointments.length];
 		for (int i = 0; i < appointments.length; i++) {
 			try {
-				items[i] = ((AppointmentFormater) this.getRaplaContext()
-						.lookup(AppointmentFormater.ROLE))
-						.getSummary(appointments[i]);
+				items[i] =  this.getRaplaContext().lookup(AppointmentFormater.class).getSummary(appointments[i]);
 			} catch (RaplaContextException e) {
 				// Notify user and send back to allocatable categories
 				ExceptionDialogFactory

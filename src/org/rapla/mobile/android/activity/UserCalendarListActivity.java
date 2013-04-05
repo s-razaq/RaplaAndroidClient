@@ -135,8 +135,7 @@ public class UserCalendarListActivity extends BaseActivity {
 	 */
 	public void refreshListView() {
 		try {
-			I18nBundle i18n = (I18nBundle) this.getRaplaContext().lookup(
-					I18nBundle.ROLE);
+			I18nBundle i18n =  this.getRaplaContext().lookup(I18nBundle.class);
 			this.runningTask = new LoadUserCalendarsAsyncTask(this,
 					this.listView, this.getFacade(), i18n.getString("default"),
 					ExceptionDialogFactory.getInstance(),

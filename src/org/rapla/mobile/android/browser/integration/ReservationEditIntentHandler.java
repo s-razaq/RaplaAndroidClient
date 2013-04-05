@@ -82,8 +82,7 @@ public class ReservationEditIntentHandler implements BrowserIntentHandler {
 			RaplaContext raplaContext) throws Exception {
 
 		// Client facade
-		ClientFacade facade = (ClientFacade) raplaContext
-				.lookup(ClientFacade.ROLE);
+		ClientFacade facade = raplaContext.lookup(ClientFacade.class);
 
 		// Get reservation
 		List<String> parameters = intent.getData().getPathSegments();

@@ -176,8 +176,7 @@ public class AppointmentListActivity extends BaseActivity {
 		try {
 			// Lazy load appointment formatter
 			if (this.formatter == null) {
-				this.formatter = (AppointmentFormater) this.getRaplaContext()
-						.lookup(AppointmentFormater.ROLE);
+				this.formatter = this.getRaplaContext().lookup(AppointmentFormater.class);
 			}
 			// Execute task
 			this.runningTask = new LoadAppointmentsAsyncTask(this,

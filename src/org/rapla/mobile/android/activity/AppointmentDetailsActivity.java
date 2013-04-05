@@ -91,8 +91,7 @@ public class AppointmentDetailsActivity extends BaseActivity {
 		// Lazy load appointment formatter
 		if (this.loc == null) {
 			try {
-				this.loc = (RaplaLocale) this.getRaplaContext().lookup(
-						RaplaLocale.ROLE);
+				this.loc = this.getRaplaContext().lookup(RaplaLocale.class);
 			} catch (RaplaContextException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

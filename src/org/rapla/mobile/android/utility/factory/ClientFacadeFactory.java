@@ -49,8 +49,7 @@ public class ClientFacadeFactory {
 			throws RaplaMobileException {
 
 		try {
-			ClientFacade facade = (ClientFacade) context
-					.lookup(ClientFacade.ROLE);
+			ClientFacade facade = context.lookup(ClientFacade.class);
 			return facade;
 		} catch (Exception ex) {
 			throw new RaplaMobileException("Initializing client facade failed",
