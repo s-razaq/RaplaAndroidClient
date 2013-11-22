@@ -108,3 +108,66 @@ Initial Start
 -------------
 
 When first starting the app, you are requested to enter your credentials and the Rapla server url with port. Please contact your Rapla administrator, if you don’t know the server url or port.
+
+Technical Documentation
+=======================
+
+This gives an overview of the development of the Rapla mobile client for Android smartphones and is intended for developers who want to continue working on the client.
+
+General Information
+-------------------
+
+The Rapla mobile client for Android smartphones follows the regular Android development principals. There are a couple of activities, each representing an application screen. A base activity class offers functionality across all other activities and a custom application class is used for keeping data across the application’s lifecycle. Operations that might take some time are usually executed in background threads (AsyncTask). Otherwise the Android UI will be blocked until the operation finished.
+
+Internationalization and Localization
+-------------------------------------
+
+The application’s default language is English. Internationalization is achieved by providing additional language files in the corresponding resource folder (e.g. strings-de).
+
+Server Interaction
+------------------
+
+The client interacts with the server via the regular client façade which is also used for the desktop client. Hence, the interaction is not optimized for mobile scenarios.
+
+Additionally, the server version must be the same as for the client (see doc.properties file in the
+Rapla root directory).
+
+Application Runtime Storage
+---------------------------
+
+If the login succeeds, the ConnectToServerBackgroundAsyncTask stores a RaplaConnection instance
+in the application’s runtime storage (RuntimeStorage). This enables methods like getFacade of the
+BaseActivity to provide a reference to the ClientFacade.
+
+If a reservation is edited, a reference is stored in the runtime storage via setSelectedReservation and retrieved via getSelectedReservation (see BaseActivity). This reference is later used to retrieve data like assigned resources or appointments.
+
+Unit Tests
+----------
+
+The Android test project is located in the tests directory within the project. With Eclipse, the test project can be imported as a separate project. Usually, it is not associated with version control so changes in the test project need to be committed via the actual project.
+
+To execute the unit tests, there is no need to configure or start a Rapla server. All unit tests run without a server by using mock objects.
+
+Naming Convention
+-----------------
+
+Each test class corresponds to a class in production. E.g. the corresponding unit test class for class BaseActivity would be BaseActivityTest. The test classes are also located in the corresponding package, adding test after org.rapla.mobild.android.
+
+Test cases (methods) start with test, most often followed by the method name that is tested and the
+expected behavior or output.
+
+There are also some integration test cases with usually start with testIntegrationScenario followed by a more detailed description of the test case.
+
+Set Up Test Environment
+-----------------------
+
+In order to set up a test environment, you first need to start a Rapla server. For development, this can usually be done on the local machine.
+
+If you start the application on a local emulator, you can use IP 10.0.2.2 to access the localhost of your actual computer. This will not work, if you use a device with USB connection.
+
+For a quick login, you can add the user credentials in the PreferencesHandler constructor by calling setUsername, etc. Do not forget to remove this code for production.
+
+To skip the HTML5 integration, set the USE_DEMO_HOME attribute of class RaplaMobileApplication
+to true and set the DummyHomeActivity as start activity in the Android manifest. The
+DummyHomeActivity simply lists all available reservations for the logged in user. That way, you can
+avoid calling the HTML5 calendar and entering the edit mode via selecting a reservation.
