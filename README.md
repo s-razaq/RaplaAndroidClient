@@ -91,3 +91,20 @@ The appointment details display all data for an appointment. The appointment typ
 The other fields adjust accordingly. The changes are applied by pressing the back button.
 
 ![Appointment Details](https://dl.dropboxusercontent.com/u/3672489/Rapla/appointmentdetails.png)
+
+App Setup
+=========
+
+Prerequisites
+-------------
+
+The following prerequisites must be met in order to run the application:
+
+*Android version 2.2 or greater
+*A network connection must be available at all times
+*The Rapla server must be enabled for the client application
+
+Initial Start
+-------------
+
+When first starting the app, you are requested to enter your credentials and the Rapla server url with port. Please contact your Rapla administrator, if you don’t know the server url or port.
