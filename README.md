@@ -12,7 +12,6 @@ Unfortunately, you can only perform changes in the Rapla system from a computer 
 
 This mobile application for Android removes the obstacle and enables users to manage their event planing from smart phone.
 
-
 User Interface
 ==============
 
