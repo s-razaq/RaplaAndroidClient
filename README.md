@@ -12,6 +12,16 @@ Unfortunately, you can only perform changes in the Rapla system from a computer 
 
 This mobile application for Android removes the obstacle and enables users to manage their event planing from smart phone.
 
+User Interface
+==============
+
+Login
+-----
+
+The login screen enables you to change your Rapla server credentials, which are necessary to establish a connection to the server.
+
+![Login](https://dl.dropboxusercontent.com/u/3672489/Rapla/login.png)
+
 
 User Interface
 ==============
